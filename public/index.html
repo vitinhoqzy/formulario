@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Primeiro Site</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tema.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <button id="botaoTema" class="botao-tema" type="button" aria-pressed="false">
+        Modo noturno
+    </button>
+
+    <header>
+        <h1>Meu Primeiro Site</h1>
+        <p>Estou aprendendo desenvolvimento web!</p>
+    </header>
+
+   <main>
+    <h2>Criar uma conta</h2>
+    <p>Preencha os campos para se cadastrar.</p>
+
+    <form id="formularioCadastro">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" minlength="2" maxlength="60" autocomplete="name" required>
+
+        <label for="emailCadastro">E-mail</label>
+        <input id="emailCadastro" name="email" type="email" maxlength="254" autocomplete="email" required>
+
+        <label for="senhaCadastro">Senha</label>
+        <input id="senhaCadastro" name="senha" type="password" minlength="8" maxlength="72" autocomplete="new-password" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="mensagemCadastro" aria-live="polite"></p>
+<!-- O JavaScript só mostra este link quando há uma sessão ativa. -->
+<p><a id="linkPainel" href="/painel" hidden>Ir para minha área</a></p>
+    <hr>
+
+    <h2>Entrar</h2>
+    <p>Use o e-mail e a senha da conta cadastrada.</p>
+
+    <form id="formularioLogin">
+        <label for="emailLogin">E-mail</label>
+        <input id="emailLogin" name="email" type="email" autocomplete="username" required>
+
+        <label for="senhaLogin">Senha</label>
+        <input id="senhaLogin" name="senha" type="password" autocomplete="current-password" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p id="mensagemLogin" aria-live="polite"></p>
+    <p><a href="/esqueci-senha">Esqueci minha senha</a></p>
+    <!-- Mostra o nome da pessoa quando ela estiver conectada. -->
+<p id="estadoSessao" aria-live="polite"></p>
+
+<!-- Este botão só aparece enquanto houver uma sessão ativa. -->
+<button id="botaoSair" type="button" hidden>Sair</button>
+</main>
+
+</body>
+</html>

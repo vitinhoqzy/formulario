@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redefinir senha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="tema.js" defer></script>
+</head>
+<body>
+  <button id="botaoTema" class="botao-tema" type="button" aria-pressed="false">
+    Modo noturno
+  </button>
+
+  <main class="container">
+    <h1>Escolher nova senha</h1>
+    <p>Digite e confirme sua nova senha.</p>
+
+    <form id="form-redefinir-senha">
+      <label for="nova-senha">Nova senha</label>
+      <input id="nova-senha" type="password" required minlength="8">
+
+      <label for="confirmar-senha">Confirme a nova senha</label>
+      <input id="confirmar-senha" type="password" required minlength="8">
+
+      <button type="submit">Salvar nova senha</button>
+    </form>
+
+    <p id="mensagem" role="status"></p>
+    <a href="/">Voltar à página inicial</a>
+  </main>
+
+  <script src="redefinir-senha.js"></script>
+</body>
+</html>

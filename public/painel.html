@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha área</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tema.js" defer></script>
+    <script src="painel.js" defer></script>
+</head>
+<body>
+    <button id="botaoTema" class="botao-tema" type="button" aria-pressed="false">
+        Modo noturno
+    </button>
+
+    <header>
+        <h1>Minha área</h1>
+        <p>Você entrou em uma página protegida.</p>
+    </header>
+
+    <main>
+        <h2>Olá, <span id="nomeUsuario">...</span>!</h2>
+        <p>Esta área aparece para quem está conectado.</p>
+
+        <p id="mensagemPainel" aria-live="polite"></p>
+
+        <button id="botaoSair" type="button">Sair da conta</button>
+        <h2>Alterar senha</h2>
+<p>Confirme a senha atual e escolha uma nova senha.</p>
+
+<form id="formularioAlterarSenha">
+    <label for="senhaAtual">Senha atual</label>
+    <input
+        id="senhaAtual"
+        name="senhaAtual"
+        type="password"
+        autocomplete="current-password"
+        required
+    >
+
+    <label for="novaSenha">Nova senha</label>
+    <input
+        id="novaSenha"
+        name="novaSenha"
+        type="password"
+        minlength="8"
+        maxlength="72"
+        autocomplete="new-password"
+        required
+    >
+
+    <label for="confirmarSenha">Confirme a nova senha</label>
+    <input
+        id="confirmarSenha"
+        name="confirmarSenha"
+        type="password"
+        minlength="8"
+        maxlength="72"
+        autocomplete="new-password"
+        required
+    >
+
+    <button type="submit">Salvar nova senha</button>
+</form>
+
+<p id="mensagemSenha" aria-live="polite"></p>
+    </main>
+</body>
+</html>

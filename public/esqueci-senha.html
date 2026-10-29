@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar senha</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tema.js" defer></script>
+    <script src="esqueci-senha.js" defer></script>
+</head>
+<body>
+    <button id="botaoTema" class="botao-tema" type="button" aria-pressed="false">
+        Modo noturno
+    </button>
+
+    <header>
+        <h1>Recuperar senha</h1>
+        <p>Vamos ajudar você a criar uma senha nova.</p>
+    </header>
+
+    <main>
+        <h2>Solicitar link</h2>
+        <p>Digite o e-mail usado no cadastro.</p>
+
+        <form id="formularioRecuperacao">
+            <label for="emailRecuperacao">E-mail</label>
+            <input
+                id="emailRecuperacao"
+                type="email"
+                autocomplete="email"
+                required
+            >
+
+            <button type="submit">Gerar link</button>
+        </form>
+
+        <p id="mensagemRecuperacao" aria-live="polite"></p>
+        <a href="/">Voltar à página inicial</a>
+    </main>
+</body>
+</html>
